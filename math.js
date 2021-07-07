@@ -1,6 +1,8 @@
 var math = {
-  add: function(a, b) {
-    return a + b;
+  
+    sum: function(a,b){
+     
+       return a+b;
   }
 };
 
