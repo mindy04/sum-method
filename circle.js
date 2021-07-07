@@ -10,12 +10,12 @@ Circle.prototype.isOverlapped = function(obj) {
   if (c1c2 == (this.r + obj.r)) {
     return 0;
   }
+    if (c1c2 < (this.r + obj.r)) {
+    return -1;
+  }
   if (c1c2 > (this.r + obj.r)) {
     return 1;
   }
-  if (c1c2 < (this.r + obj.r)) {
-    return -1;
-  }
-};
 
+};
 module.exports = Circle;
